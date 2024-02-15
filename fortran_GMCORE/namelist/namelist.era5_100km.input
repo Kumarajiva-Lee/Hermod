@@ -1,0 +1,20 @@
+&gmcore_control
+  nlon                 = 360
+  nlat                 = 180
+  nlev                 = 32
+  vert_coord_scheme    = 'hybrid'
+  vert_coord_template  = 'wrf_l32'
+  run_days             = 1
+  dt_dyn               = 240
+  topo_file            = '/share2/zongyi/ETOPO1_Ice_g_gmt4.grd'
+  use_topo_smooth      = .false.
+  topo_smooth_cycles   = 3
+  bkg_type             = 'era5'
+  bkg_file             = '/home/users/liyiyuan/DiDA/initial/era5_2022060100.nc'
+  case_name            = 'gmcore.dt240.360x180x32.2022060100'
+  history_interval     = '1 hours'
+  output_h0            = .false.
+  output_h0_new_file   = 'one_file'
+  use_div_damp         = .true.
+  use_smag_damp        = .true.
+/
